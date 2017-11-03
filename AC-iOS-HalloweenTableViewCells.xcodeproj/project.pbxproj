@@ -14,6 +14,8 @@
 		54FB4CC71FA8296F002141C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FB4CC51FA8296F002141C7 /* LaunchScreen.storyboard */; };
 		54FB4CCF1FA82985002141C7 /* HalloweenImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB4CCE1FA82985002141C7 /* HalloweenImage.swift */; };
 		54FB4CD11FA82C44002141C7 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FB4CD01FA82C44002141C7 /* ImageData.swift */; };
+		81B68B001FABDA55004B1352 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B68AFF1FABDA55004B1352 /* ImageTableViewCell.swift */; };
+		81B68B021FABEF08004B1352 /* OtherImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B68B011FABEF08004B1352 /* OtherImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		54FB4CC81FA8296F002141C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54FB4CCE1FA82985002141C7 /* HalloweenImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalloweenImage.swift; sourceTree = "<group>"; };
 		54FB4CD01FA82C44002141C7 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		81B68AFF1FABDA55004B1352 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		81B68B011FABEF08004B1352 /* OtherImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				54FB4CD31FA83288002141C7 /* Supporting Files */,
 				54FB4CBE1FA8296F002141C7 /* ViewController.swift */,
 				54FB4CC01FA8296F002141C7 /* Main.storyboard */,
+				81B68AFF1FABDA55004B1352 /* ImageTableViewCell.swift */,
+				81B68B011FABEF08004B1352 /* OtherImageTableViewCell.swift */,
 				54FB4CC31FA8296F002141C7 /* Assets.xcassets */,
 				54FB4CC81FA8296F002141C7 /* Info.plist */,
 			);
@@ -160,7 +166,9 @@
 			files = (
 				54FB4CBF1FA8296F002141C7 /* ViewController.swift in Sources */,
 				54FB4CCF1FA82985002141C7 /* HalloweenImage.swift in Sources */,
+				81B68B001FABDA55004B1352 /* ImageTableViewCell.swift in Sources */,
 				54FB4CBD1FA8296F002141C7 /* AppDelegate.swift in Sources */,
+				81B68B021FABEF08004B1352 /* OtherImageTableViewCell.swift in Sources */,
 				54FB4CD11FA82C44002141C7 /* ImageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

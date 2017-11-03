@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,113 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AC_iOS_HalloweenTableViewCells" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cah-Nr-tI8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Image Cell" rowHeight="300" id="vHs-MU-ztg" customClass="ImageTableViewCell" customModule="AC_iOS_HalloweenTableViewCells" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vHs-MU-ztg" id="Lr5-Wl-WrY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AnK-Nl-j9v" userLabel="halloweenImageView">
+                                                    <rect key="frame" x="18" y="8" width="339" height="234"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="Ybe-Fm-IM3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvc-WA-dex" userLabel="halloweenLabel">
+                                                    <rect key="frame" x="18" y="252" width="339" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="LTB-sL-MFJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="AnK-Nl-j9v" firstAttribute="top" secondItem="Lr5-Wl-WrY" secondAttribute="topMargin" id="F3v-0o-hwn"/>
+                                                <constraint firstItem="wvc-WA-dex" firstAttribute="leading" secondItem="Lr5-Wl-WrY" secondAttribute="leadingMargin" constant="10" id="XcR-ye-0iq"/>
+                                                <constraint firstItem="wvc-WA-dex" firstAttribute="top" secondItem="AnK-Nl-j9v" secondAttribute="bottom" constant="10" id="eSv-aV-jdr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AnK-Nl-j9v" secondAttribute="trailing" constant="10" id="idW-jC-doZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wvc-WA-dex" secondAttribute="trailing" constant="10" id="lMn-fB-64y"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wvc-WA-dex" secondAttribute="bottom" constant="10" id="lbk-mY-Dw2"/>
+                                                <constraint firstItem="AnK-Nl-j9v" firstAttribute="leading" secondItem="Lr5-Wl-WrY" secondAttribute="leadingMargin" constant="10" id="zwd-O6-kDh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="halloweenImageCell" destination="AnK-Nl-j9v" id="KVv-Hl-w8C"/>
+                                            <outlet property="halloweenLabel" destination="wvc-WA-dex" id="Ghq-4I-nyd"/>
+                                            <outlet property="imageView" destination="AnK-Nl-j9v" id="okE-Yk-Iic"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Other Image Cell" rowHeight="300" id="kW7-RD-pLV" customClass="OtherImageTableViewCell" customModule="AC_iOS_HalloweenTableViewCells" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="328" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kW7-RD-pLV" id="Ayu-S0-c8s">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ipc-qC-ezB" userLabel="halloweenImageView">
+                                                    <rect key="frame" x="18" y="58" width="339" height="224"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="nrI-Jx-Mxt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vid-hT-Yu7" userLabel="halloweenLabel">
+                                                    <rect key="frame" x="18" y="18" width="339" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Qe8-Hk-ffb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Vid-hT-Yu7" secondAttribute="trailing" constant="10" id="30F-AR-0MQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ipc-qC-ezB" secondAttribute="bottom" constant="10" id="4y7-aS-04N"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ipc-qC-ezB" secondAttribute="trailing" constant="10" id="7hE-mZ-Rec"/>
+                                                <constraint firstItem="ipc-qC-ezB" firstAttribute="leading" secondItem="Ayu-S0-c8s" secondAttribute="leadingMargin" constant="10" id="9GZ-uF-0dB"/>
+                                                <constraint firstItem="ipc-qC-ezB" firstAttribute="top" secondItem="Vid-hT-Yu7" secondAttribute="bottom" constant="10" id="aaw-AP-UZK"/>
+                                                <constraint firstItem="Vid-hT-Yu7" firstAttribute="top" secondItem="Ayu-S0-c8s" secondAttribute="topMargin" constant="10" id="guC-hy-eR4"/>
+                                                <constraint firstItem="Vid-hT-Yu7" firstAttribute="leading" secondItem="Ayu-S0-c8s" secondAttribute="leadingMargin" constant="10" id="ph8-vW-WkP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="halloweenImageView" destination="ipc-qC-ezB" id="fSy-od-7F2"/>
+                                            <outlet property="halloweenLabel" destination="Vid-hT-Yu7" id="ScC-Sp-I2D"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cah-Nr-tI8" secondAttribute="bottom" id="CjH-M0-PI7"/>
+                            <constraint firstItem="Cah-Nr-tI8" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="H5o-lH-q6G"/>
+                            <constraint firstItem="Cah-Nr-tI8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T7G-LH-QTY"/>
+                            <constraint firstItem="Cah-Nr-tI8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aEh-7r-1o0"/>
+                            <constraint firstItem="Cah-Nr-tI8" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="cMw-9t-2gO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cah-Nr-tI8" secondAttribute="trailing" id="zmo-zT-SOH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Cah-Nr-tI8" id="uVF-op-E7R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="374" y="-81"/>
         </scene>
     </scenes>
 </document>
